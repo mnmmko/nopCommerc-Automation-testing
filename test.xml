@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="demo nopeCommerece" parallel="none" thread-count="1">
+    <parameter name="browser" value="chrome"/>
+    <test name="basetest"  verbose="1">
+        <classes>
+       <class name="Tests.base_test"></class>
+        </classes>
+
+    </test> <!-- Test -->
+<test name="redister">
+    <classes>
+        <class name="Tests.register_testcases"></class>
+    </classes>
+</test>
+    <test name="login">
+    <classes>
+        <class name="runner.Login"></class>
+    </classes>
+</test>
+    <test name="product">
+    <classes>
+        <class name="Tests.search_testcases"></class>
+        <class name="Tests.product_testcases"></class>
+        <class name="Tests.cart_testcases"></class>
+    </classes>
+</test>
+
+
+</suite> <!-- Suite -->
