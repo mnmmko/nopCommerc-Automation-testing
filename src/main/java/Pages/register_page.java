@@ -58,6 +58,7 @@ public class register_page extends base_page{
     public void setemail(String emails){
         waits_for_element(driver,20,email);
         driver.findElement(email).sendKeys(emails);
+
     }
     public void setCompany(String Companys){
         waits_for_element(driver,20,company);
