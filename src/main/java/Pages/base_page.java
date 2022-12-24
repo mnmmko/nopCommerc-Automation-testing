@@ -21,4 +21,11 @@ public class base_page {
         jse=(JavascriptExecutor) driver;
         jse.executeScript("scroll(0,250)");
     }
+        public void check_element_is_appear_everyspcifictime(WebDriver driver, WebElement element){
+        FluentWait wait=new FluentWait(driver)
+                .withTimeout(Duration.ofSeconds(5))
+                .pollingEvery(Duration.ofSeconds(1))
+                .ignoring(NoSuchElementException.class);
+        wait.until(ExpectedConditions.invisibilityOf(element));
+    }
 }
