@@ -27,7 +27,11 @@ public class home_page extends base_page{
 
     }
     public void click_logout(){
+<<<<<<< HEAD
 //        waits_for_element(driver,20,logout);
+=======
+//         waits_for_element(driver,20,logout);
+>>>>>>> 747285cca9dde891135740eef4425e4b0a6b264d
         check_element_is_appear_everyspcifictime(driver,driver.findElement(logout));
         driver.findElement(logout).click();
     }

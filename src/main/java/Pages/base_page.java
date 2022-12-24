@@ -22,7 +22,11 @@ public class base_page {
         jse=(JavascriptExecutor) driver;
         jse.executeScript("scroll(0,250)");
     }
+<<<<<<< HEAD
     public void check_element_is_appear_everyspcifictime(WebDriver driver, WebElement element){
+=======
+        public void check_element_is_appear_everyspcifictime(WebDriver driver, WebElement element){
+>>>>>>> 747285cca9dde891135740eef4425e4b0a6b264d
         FluentWait wait=new FluentWait(driver)
                 .withTimeout(Duration.ofSeconds(5))
                 .pollingEvery(Duration.ofSeconds(1))
