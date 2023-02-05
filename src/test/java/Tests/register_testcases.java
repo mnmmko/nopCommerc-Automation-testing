@@ -42,7 +42,7 @@ public class register_testcases {
         String check_register=rc.get_registercheck();
         Assert.assertEquals("Your registration completed",check_register);
         rc.click_continue();
-        hp.click_logout();
+
     }
     @Test(dependsOnMethods = "test_valid_register",alwaysRun = true)
     public void test_invalid_register(){
