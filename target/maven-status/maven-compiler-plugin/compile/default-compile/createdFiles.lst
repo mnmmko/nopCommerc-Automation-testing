@@ -1,0 +1,7 @@
+Pages\cart_page.class
+Pages\home_page.class
+Pages\login_page.class
+Pages\product_page.class
+Pages\register_page.class
+Pages\register_complition.class
+Pages\base_page.class

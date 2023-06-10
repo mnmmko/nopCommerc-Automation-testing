@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-demo_nopeCommerece">
+              <span class="suite-name border-failed">demo nopeCommerece</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-demo_nopeCommerece">
+                    <span>C:\Users\user\Downloads\Flutter\demo_nopecommerce_testing\test.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-demo_nopeCommerece">
+                    <span class="test-stats">4 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-demo_nopeCommerece">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-demo_nopeCommerece">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-demo_nopeCommerece">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-demo_nopeCommerece">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-demo_nopeCommerece">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">12 methods, 4 failed,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-demo_nopeCommerece" class="hide-methods failed suite-demo_nopeCommerece"> (hide)</a> <!-- hide-methods failed suite-demo_nopeCommerece -->
+                      <a href="#" panel-name="suite-demo_nopeCommerece" class="show-methods failed suite-demo_nopeCommerece"> (show)</a> <!-- show-methods failed suite-demo_nopeCommerece -->
+                    </span>
+                    <div class="method-list-content failed suite-demo_nopeCommerece">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-demo_nopeCommerece" title="Tests.register_testcases" hash-for-method="test_valid_register(female, samar, tamer, 6.0, July, 1995.0, samar6238@gmail.com, company02, 145558.0, 145558.0)">test_valid_register(female, samar, tamer, 6.0, July, 1995.0, samar6238@gmail.com, company02, 145558.0, 145558.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-demo_nopeCommerece" title="Tests.register_testcases" hash-for-method="test_valid_register(male, ali, ramy, 5.0, May, 2000.0, ali0171@gmail.com, company01, 1235755.0, 1235755.0)">test_valid_register(male, ali, ramy, 5.0, May, 2000.0, ali0171@gmail.com, company01, 1235755.0, 1235755.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-demo_nopeCommerece" title="Tests.register_testcases" hash-for-method="test_valid_register(male, kamel, shady, 20.0, April, 1990.0, kamel602@gmail.com, company03, 2258566.0, 2258566.0)">test_valid_register(male, kamel, shady, 20.0, April, 1990.0, kamel602@gmail.com, company03, 2258566.0, 2258566.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-demo_nopeCommerece" title="Tests.register_testcases" hash-for-method="test_valid_register(male, shady, adel, 30.0, December, 2001.0, shady024@gmail.com, company04, 1.2345678E7, 1.2345678E7)">test_valid_register(male, shady, adel, 30.0, December, 2001.0, shady024@gmail.com, company04, 1.2345678E7, 1.2345678E7)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-demo_nopeCommerece -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-demo_nopeCommerece" class="hide-methods passed suite-demo_nopeCommerece"> (hide)</a> <!-- hide-methods passed suite-demo_nopeCommerece -->
+                      <a href="#" panel-name="suite-demo_nopeCommerece" class="show-methods passed suite-demo_nopeCommerece"> (show)</a> <!-- show-methods passed suite-demo_nopeCommerece -->
+                    </span>
+                    <div class="method-list-content passed suite-demo_nopeCommerece">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-demo_nopeCommerece" title="runner.Login" hash-for-method="runScenario(&quot;invalid login&quot;, &quot;Optional[login]&quot;)">runScenario("invalid login", "Optional[login]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-demo_nopeCommerece" title="runner.Login" hash-for-method="runScenario(&quot;valid login&quot;, &quot;Optional[login]&quot;)">runScenario("valid login", "Optional[login]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-demo_nopeCommerece" title="runner.Login" hash-for-method="runScenario(&quot;invalid login&quot;, &quot;Optional[login]&quot;)">runScenario("invalid login", "Optional[login]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-demo_nopeCommerece" title="runner.Login" hash-for-method="runScenario(&quot;invalid login&quot;, &quot;Optional[login]&quot;)">runScenario("invalid login", "Optional[login]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-demo_nopeCommerece" title="Tests.register_testcases" hash-for-method="test_invalid_register">test_invalid_register</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-demo_nopeCommerece" title="Tests.cart_testcases" hash-for-method="valid_cart_test">valid_cart_test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-demo_nopeCommerece" title="Tests.product_testcases" hash-for-method="valid_product_test">valid_product_test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-demo_nopeCommerece" title="Tests.search_testcases" hash-for-method="valid_search_test">valid_search_test</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-demo_nopeCommerece -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-demo_nopeCommerece" class="panel demo_nopeCommerece">
+          <div class="suite-demo_nopeCommerece-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Tests.register_testcases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_valid_register(female, samar, tamer, 6.0, July, 1995.0, samar6238@gmail.com, company02, 145558.0, 145558.0)">
+                  </a> <!-- test_valid_register(female, samar, tamer, 6.0, July, 1995.0, samar6238@gmail.com, company02, 145558.0, 145558.0) -->
+                  <span class="method-name">test_valid_register</span>
+                  <span class="parameters">(female, samar, tamer, 6.0, July, 1995.0, samar6238@gmail.com, company02, 145558.0, 145558.0)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.linkText: Log out (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Pages.base_page.waits_for_element(base_page.java:18)
+	at Pages.home_page.click_logout(home_page.java:30)
+	at Tests.register_testcases.test_valid_register(register_testcases.java:45)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Log out&quot;}
+  (Session info: chrome=107.0.5304.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-TUBAGFL&apos;, ip: &apos;192.168.1.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:5280}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ddc92301eae3276aefdeb3be24ef17d
+*** Element info: {Using=link text, value=Log out}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 31 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_valid_register(male, ali, ramy, 5.0, May, 2000.0, ali0171@gmail.com, company01, 1235755.0, 1235755.0)">
+                  </a> <!-- test_valid_register(male, ali, ramy, 5.0, May, 2000.0, ali0171@gmail.com, company01, 1235755.0, 1235755.0) -->
+                  <span class="method-name">test_valid_register</span>
+                  <span class="parameters">(male, ali, ramy, 5.0, May, 2000.0, ali0171@gmail.com, company01, 1235755.0, 1235755.0)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.linkText: Log out (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Pages.base_page.waits_for_element(base_page.java:18)
+	at Pages.home_page.click_logout(home_page.java:30)
+	at Tests.register_testcases.test_valid_register(register_testcases.java:45)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Log out&quot;}
+  (Session info: chrome=107.0.5304.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-TUBAGFL&apos;, ip: &apos;192.168.1.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:5280}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ddc92301eae3276aefdeb3be24ef17d
+*** Element info: {Using=link text, value=Log out}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 31 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_valid_register(male, kamel, shady, 20.0, April, 1990.0, kamel602@gmail.com, company03, 2258566.0, 2258566.0)">
+                  </a> <!-- test_valid_register(male, kamel, shady, 20.0, April, 1990.0, kamel602@gmail.com, company03, 2258566.0, 2258566.0) -->
+                  <span class="method-name">test_valid_register</span>
+                  <span class="parameters">(male, kamel, shady, 20.0, April, 1990.0, kamel602@gmail.com, company03, 2258566.0, 2258566.0)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.linkText: Log out (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Pages.base_page.waits_for_element(base_page.java:18)
+	at Pages.home_page.click_logout(home_page.java:30)
+	at Tests.register_testcases.test_valid_register(register_testcases.java:45)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Log out&quot;}
+  (Session info: chrome=107.0.5304.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-TUBAGFL&apos;, ip: &apos;192.168.1.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:5280}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ddc92301eae3276aefdeb3be24ef17d
+*** Element info: {Using=link text, value=Log out}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 31 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_valid_register(male, shady, adel, 30.0, December, 2001.0, shady024@gmail.com, company04, 1.2345678E7, 1.2345678E7)">
+                  </a> <!-- test_valid_register(male, shady, adel, 30.0, December, 2001.0, shady024@gmail.com, company04, 1.2345678E7, 1.2345678E7) -->
+                  <span class="method-name">test_valid_register</span>
+                  <span class="parameters">(male, shady, adel, 30.0, December, 2001.0, shady024@gmail.com, company04, 1.2345678E7, 1.2345678E7)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.linkText: Log out (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Pages.base_page.waits_for_element(base_page.java:18)
+	at Pages.home_page.click_logout(home_page.java:30)
+	at Tests.register_testcases.test_valid_register(register_testcases.java:45)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Log out&quot;}
+  (Session info: chrome=107.0.5304.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-TUBAGFL&apos;, ip: &apos;192.168.1.19&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.88, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:5280}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8ddc92301eae3276aefdeb3be24ef17d
+*** Element info: {Using=link text, value=Log out}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 31 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-demo_nopeCommerece-class-failed -->
+          <div class="suite-demo_nopeCommerece-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Tests.product_testcases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="valid_product_test">
+                  </a> <!-- valid_product_test -->
+                  <span class="method-name">valid_product_test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-demo_nopeCommerece-class-passed -->
+          <div class="suite-demo_nopeCommerece-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Tests.register_testcases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_invalid_register">
+                  </a> <!-- test_invalid_register -->
+                  <span class="method-name">test_invalid_register</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-demo_nopeCommerece-class-passed -->
+          <div class="suite-demo_nopeCommerece-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Tests.cart_testcases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="valid_cart_test">
+                  </a> <!-- valid_cart_test -->
+                  <span class="method-name">valid_cart_test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-demo_nopeCommerece-class-passed -->
+          <div class="suite-demo_nopeCommerece-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Tests.search_testcases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="valid_search_test">
+                  </a> <!-- valid_search_test -->
+                  <span class="method-name">valid_search_test</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-demo_nopeCommerece-class-passed -->
+          <div class="suite-demo_nopeCommerece-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">runner.Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;invalid login&quot;, &quot;Optional[login]&quot;)">
+                  </a> <!-- runScenario("invalid login", "Optional[login]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("invalid login", "Optional[login]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;valid login&quot;, &quot;Optional[login]&quot;)">
+                  </a> <!-- runScenario("valid login", "Optional[login]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("valid login", "Optional[login]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;invalid login&quot;, &quot;Optional[login]&quot;)">
+                  </a> <!-- runScenario("invalid login", "Optional[login]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("invalid login", "Optional[login]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;invalid login&quot;, &quot;Optional[login]&quot;)">
+                  </a> <!-- runScenario("invalid login", "Optional[login]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("invalid login", "Optional[login]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-demo_nopeCommerece-class-passed -->
+        </div> <!-- panel demo_nopeCommerece -->
+        <div panel-name="test-xml-demo_nopeCommerece" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\user\Downloads\Flutter\demo_nopecommerce_testing\test.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;demo nopeCommerece&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;basetest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Tests.base_test&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- basetest --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;redister&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Tests.register_testcases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- redister --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;login&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;runner.Login&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- login --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;product&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Tests.search_testcases&quot;/&gt;
+      &lt;class name=&quot;Tests.product_testcases&quot;/&gt;
+      &lt;class name=&quot;Tests.cart_testcases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- product --&gt;
+&lt;/suite&gt; &lt;!-- demo nopeCommerece --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-demo_nopeCommerece" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for demo nopeCommerece</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">basetest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">redister (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">login (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">product (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-demo_nopeCommerece" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for demo nopeCommerece</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">product</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">valid_product_test</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">search</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">valid_search_test</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-demo_nopeCommerece" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for demo nopeCommerece</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_demo_nopeCommerece');
+function tableData_demo_nopeCommerece() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(12);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'test_valid_register')
+data.setCell(0, 2, 'Tests.register_testcases')
+data.setCell(0, 3, 23510);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'test_valid_register')
+data.setCell(1, 2, 'Tests.register_testcases')
+data.setCell(1, 3, 23338);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'test_valid_register')
+data.setCell(2, 2, 'Tests.register_testcases')
+data.setCell(2, 3, 23145);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'test_valid_register')
+data.setCell(3, 2, 'Tests.register_testcases')
+data.setCell(3, 3, 23070);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'valid_search_test')
+data.setCell(4, 2, 'Tests.search_testcases')
+data.setCell(4, 3, 2812);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'valid_cart_test')
+data.setCell(5, 2, 'Tests.cart_testcases')
+data.setCell(5, 3, 2159);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'test_invalid_register')
+data.setCell(6, 2, 'Tests.register_testcases')
+data.setCell(6, 3, 2104);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'runner.Login')
+data.setCell(7, 3, 1222);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'runner.Login')
+data.setCell(8, 3, 1136);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'runner.Login')
+data.setCell(9, 3, 1122);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'runner.Login')
+data.setCell(10, 3, 1120);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'valid_product_test')
+data.setCell(11, 2, 'Tests.product_testcases')
+data.setCell(11, 3, 232);
+window.suiteTableData['demo_nopeCommerece']= { tableData: data, tableDiv: 'times-div-demo_nopeCommerece'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-demo_nopeCommerece">
+              </div> <!-- times-div-demo_nopeCommerece -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-demo_nopeCommerece" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for demo nopeCommerece</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-demo_nopeCommerece" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-demo_nopeCommerece" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.base_test</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">open(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.register_testcases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_valid_register(male, ali, ramy, 5.0, May, 2000.0, ali0171@gmail.com, company01, 1235755.0, 1235755.0)</span>
+                <span class="method-start">3679 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_valid_register(female, samar, tamer, 6.0, July, 1995.0, samar6238@gmail.com, company02, 145558.0, 145558.0)</span>
+                <span class="method-start">27197 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_valid_register(male, kamel, shady, 20.0, April, 1990.0, kamel602@gmail.com, company03, 2258566.0, 2258566.0)</span>
+                <span class="method-start">50536 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_valid_register(male, shady, adel, 30.0, December, 2001.0, shady024@gmail.com, company04, 1.2345678E7, 1.2345678E7)</span>
+                <span class="method-start">73607 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_invalid_register</span>
+                <span class="method-start">96754 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runner.Login</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@7606bd03)</span>
+                <span class="method-start">98890 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("invalid login", "Optional[login]")</span>
+                <span class="method-start">99168 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("invalid login", "Optional[login]")</span>
+                <span class="method-start">100391 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("invalid login", "Optional[login]")</span>
+                <span class="method-start">101514 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("valid login", "Optional[login]")</span>
+                <span class="method-start">102651 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">103771 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.search_testcases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">valid_search_test</span>
+                <span class="method-start">103785 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.product_testcases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">valid_product_test</span>
+                <span class="method-start">106598 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.cart_testcases</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">valid_cart_test</span>
+                <span class="method-start">106830 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.base_test</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">close</span>
+                <span class="method-start">108995 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

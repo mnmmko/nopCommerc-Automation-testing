@@ -1,9 +1,11 @@
 package Tests;
 
+import Utils.EventReporter;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -16,9 +18,10 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class base_test {
-    private static WebDriver driver;
+    private static EventFiringWebDriver driver;
+//    private static WebDriver driver;
     private static Properties prop;
-    public static WebDriver getDriver(){
+    public static EventFiringWebDriver getDriver(){
         return driver;
     }
     public static Properties getProperties(){
@@ -31,16 +34,17 @@ public class base_test {
         prop.load(new FileInputStream("src/main/java/properties/properties.properties"));
         if (browser.equals("chrome")) {
             WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
+            driver =new EventFiringWebDriver(new ChromeDriver());
             driver.manage().window().maximize();
             driver.navigate().to(prop.getProperty("Base_url"));
         }
         else {
             WebDriverManager.firefoxdriver().setup();
-            driver = new FirefoxDriver();
+            driver = new EventFiringWebDriver(new FirefoxDriver());
             driver.manage().window().maximize();
             driver.navigate().to(prop.getProperty("Base_url"));
         }
+        driver.register(new EventReporter());
     }
 
     @AfterSuite
